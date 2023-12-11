@@ -107,8 +107,8 @@ if __name__ == "__main__":
             if echo == "":
                 msg = run_job("./a.out")
             else:
-                msg = run_job('echo -e "{}" | ./a.out'.format(echo))
-                sys.stdin = echo
+                process = subprocess.run(['./a.out'], input=echo, text=True, capture_output=True)
+                msg = process.stdout
             if ans == "python":
                 py_func = globals()[func]
                 ans = py_func()
