@@ -1,0 +1,14 @@
+[
+    {
+        "file":"hello.c",
+        "func":"main",
+       "echo":"",
+       "ans":"Hello World!\n"
+    },
+    {
+        "file":"fos.c",
+        "func":"main",
+       "echo":"",
+       "ans":"FOS\nFOSFOS\n"
+    }
+ ]
